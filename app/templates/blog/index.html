@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Ishchilar</h2>
+
+
+<a href="http://127.0.0.1:8000/admin/app/ish/add/">kritish</a>
+<table>
+
+  <tr>
+    <th>Ismi</th>
+    <th>Familiyasi</th>
+    <th>Yoshi</th>
+    <th>Manzil</th>
+    <th>Bolim</th>
+  
+  </tr>
+  {% for i in Ish %}
+  <tr>
+    <td>{{ i.ism }}</td>
+    <td>{{i.familiya}}</td>
+    <td>{{i.yosh}}</td>
+    <td>{{i.manzil}}</td>
+    <td>{{i.bolim}}</td>
+
+  </tr>
+
+
+  {% endfor %}
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
